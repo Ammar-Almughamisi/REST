@@ -1,8 +1,5 @@
 package com.rest.jackson.rest;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-
 public class Student {
     public String firstName;
     public String lastName;
