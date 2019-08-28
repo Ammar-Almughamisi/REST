@@ -1,0 +1,17 @@
+{
+  "id" : 14,
+  "firstName" : "Mario",
+  "lastName" : "Rossi",
+  "active" : true,
+  "address": {
+
+    "street" : "100 main st",
+    "city": "phildelpha",
+    "zip": "19013",
+    "country": "KSA"
+
+  },
+  "languages" : ["java","c","python","javascript"],
+  "company" : "Hope inc"
+
+}

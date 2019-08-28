@@ -14,9 +14,15 @@
 <body>
 <form:form action="processForm" modelAttribute="student">
     first name : <form:input path="firstName"></form:input>
-    <br><br>
     last name : <form:input path="lastName"></form:input>
+    number : <form:input path="freePasses"></form:input>
+    postalCode : <form:input path="postalCode"></form:input>
+    customVald : <form:input path="customVald"></form:input>
+    <form:errors path="firstName"></form:errors>
     <form:errors path="lastName"></form:errors>
+    <form:errors path="freePasses"></form:errors>
+    <form:errors path="postalCode"></form:errors>
+    <form:errors path="customVald"></form:errors>
     <input type="submit" value="submit">
 
 </form:form>
