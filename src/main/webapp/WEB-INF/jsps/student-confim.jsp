@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>your first name is ${student.firstName}</h1>
-<h1>your last name is ${student.lastName}</h1>
+<h1>your first name is ${user.firstName}</h1>
+<h1>your last name is ${user.lastName}</h1>
 </body>
 </html>

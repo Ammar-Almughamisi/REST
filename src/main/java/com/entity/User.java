@@ -1,13 +1,10 @@
 package com.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "item")
-public class Student {
+@Table(name = "USERS")
+public class User {
     @Id
     @Column(name = "ID")
     private int id;
@@ -19,8 +16,18 @@ public class Student {
     private String email;
     @Column(name = "PHONE_NUMBER")
     private int phone_number;
+    @OneToOne(mappedBy = "user_id" , cascade = CascadeType.ALL)
+    private label lab;
 
-    public Student(int id, String first_name, String last_name, String email, int phone_number, int password) {
+    public label getLab() {
+        return lab;
+    }
+
+    public void setLab(label lab) {
+        this.lab = lab;
+    }
+
+    public User(int id, String first_name, String last_name, String email, int phone_number, int password) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -31,7 +38,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "User{" +
                 "id=" + id +
                 ", first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
@@ -96,7 +103,7 @@ public class Student {
 
 
 
-    public Student(){
+    public User(){
 
     }
 

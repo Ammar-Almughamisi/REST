@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-<form:form action="processForm" modelAttribute="student">
+<form:form action="processForm" modelAttribute="user">
     first name : <form:input path="firstName"></form:input>
     last name : <form:input path="lastName"></form:input>
     number : <form:input path="freePasses"></form:input>
